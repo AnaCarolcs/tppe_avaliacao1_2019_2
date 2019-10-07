@@ -8,7 +8,7 @@ Quando uma interface se torna publicada, não deve ser alterada, com exceção d
 
 b) Qual a diferença entre os maus cheiros "Cirurgia com rifle" e "Mudanças divergentes". Responda informando claramente os princípios de projetos que estão sendo violados em cada um dos maus-cheiros.
 
-A diferença entre os maus cheiros é "Cirurgia com rifle" é uma mudança que irá afetar várias classes, sendo esse um sinal de que muitas classes compartilham de uma mesma situação. Enquanto "Mudanças diverfentes" será uma classe que sofre várias mudanças, sendo esse um sinal de código duplicado.
+A diferença entre os maus cheiros é "Cirurgia com rifle" é uma mudança que irá afetar várias classes, sendo esse um sinal de que muitas classes compartilham de uma mesma situação. Enquanto "Mudanças divergentes" será uma classe que sofre várias mudanças, sendo esse um sinal de código duplicado.
 
 c) Refatoração sempre leva a projetos mais eficientes em termo de desempenho. A afirmativa é verdadeira ou falsa? Justifique.
 
