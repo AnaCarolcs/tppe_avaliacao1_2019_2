@@ -71,8 +71,8 @@ public class CadastroAlunos {
 		
 		for (int i = 0; i < resposta.length - 1; i++) {
 			for (int j = i; j < resposta.length; j++) {
-				String matricula1 = resposta[i].getPrefixoMatricula() + "/" + resposta[i].getSufixoMatricula();
-				String matricula2 = resposta[j].getPrefixoMatricula() + "/" + resposta[j].getSufixoMatricula();
+				String matricula1 = geraMatricula(resposta, i);
+				String matricula2 = geraMatricula(resposta, j);
 				if (matricula1.compareTo(matricula2) > 0) {
 					Aluno t = resposta[i]; 
 					resposta[i] = resposta[j];
@@ -82,6 +82,11 @@ public class CadastroAlunos {
 		}
 		
 		return resposta;
+	}
+
+	private String geraMatricula(Aluno[] resposta, int i) {
+		String matricula1 = resposta[i].getPrefixoMatricula() + "/" + resposta[i].getSufixoMatricula();
+		return matricula1;
 	}
 
 }
