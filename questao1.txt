@@ -1,0 +1,19 @@
+Questão 1: Responda cada um dos itens abaixo em um arquivo chamado questao1.txt. Ao terminar de responder a questão, crie um commit com a seguinte mensagem: "Questão 1". Valor 20 pontos - 5 pontos cada resposta.
+
+a) Diferencie interfaces públicas de interfaces publicadas e justifique por que interfaces publicadas não devem ser refatoradas.
+
+Interfaces publicadas são interfaces que estão sendo utilizadas por outros códigos e que não temos acesso para alterar. Enquanto interfaces publicas o acesso não é restrito e pode ser modificada. Contendo nela métodos abstratos e nada de implementação.
+Quando uma interface se torna publicada, não deve ser alterada, com exceção dos chamadores, pois não temos acesso aos código que utilizam essa interface para modificá-las também, correndo o risco de quebrar outros projetos que usam acessam essa interface.
+
+
+b) Qual a diferença entre os maus cheiros "Cirurgia com rifle" e "Mudanças divergentes". Responda informando claramente os princípios de projetos que estão sendo violados em cada um dos maus-cheiros.
+
+
+
+c) Refatoração sempre leva a projetos mais eficientes em termo de desempenho. A afirmativa é verdadeira ou falsa? Justifique.
+
+Falso. Refatoração é uma boa prática que tenta tornar o código mais legível e desacoplado, facilitando futuras manutenções e novas funcionalidades, mas não garante que com isso o código se tornará mais eficiente em relação ao desempenho. Por exemplo, alterar o nome de uma classe ou método não torna o projeto mais eficiente, mas não deixa de ser uma refatoração.
+
+d) Como se tem a garantia de que uma refatoração teve sucesso?
+
+Quando métricas pré estabelecidas são alcançadas e a funcionalidade não é alterada.
